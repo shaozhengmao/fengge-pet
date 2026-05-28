@@ -1,0 +1,47 @@
+{
+  "name": "fengge-pet",
+  "version": "1.1.0",
+  "description": "峰哥亡命天涯 - 桌面宠物",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron --no-sandbox .",
+    "build": "electron-builder --mac zip"
+  },
+  "dependencies": {
+    "chokidar": "^3.6.0"
+  },
+  "devDependencies": {
+    "electron": "^30.5.1",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.fengge.pet",
+    "productName": "fengge-pet",
+    "mac": {
+      "category": "public.app-category.entertainment",
+      "icon": "assets/icon.icns",
+      "target": [
+        {
+          "target": "zip",
+          "arch": [
+            "arm64",
+            "x64"
+          ]
+        }
+      ]
+    },
+    "dmg": {
+      "title": "fengge-pet",
+      "window": {
+        "width": 540,
+        "height": 380
+      }
+    },
+    "files": [
+      "main.js",
+      "renderer.js",
+      "index.html",
+      "assets/**"
+    ]
+  }
+}
