@@ -91,6 +91,10 @@ npm start
 - Node.js 18+（仅本地运行时需要）
 
 ---
+### 🤖 Codex 特色 AI 桌宠（新增！）
+这是一个专为开发者、AI 爱好者打造的专属像素桌宠系列。
+* **目录位置**：[`/fengge_codex`](https://github.com/shaozhengmao/fengge-pet/tree/main/fengge_codex)
+---
 
 ## 📄 License
 
